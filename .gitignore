@@ -31,7 +31,9 @@
 *.out
 *.app
 
-# VS Code
-Stuff/
+# cl.exe
 *.pdb
+Stuff/
+
+# VS Code
 .vscode/

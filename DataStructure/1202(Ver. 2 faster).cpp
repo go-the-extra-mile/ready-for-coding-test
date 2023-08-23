@@ -22,7 +22,7 @@ typedef long long ll;
 
 pii jewels[300'000]; // {무게, 가격}의 목록
 int bags[300'000]; // 가방 용량의 목록
-priority_queue<int> prices; // 보석 가격의 max heap
+set<int> prices; // 보석 가격의 max heap
 
 int main() {
     ios_base::sync_with_stdio(false);

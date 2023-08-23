@@ -12,12 +12,12 @@ struct compare {
 };
 
 int main() {
-    priority_queue<int, vector<int>, compare> pq; // makes it a min heap
+    set<int, vector<int>, compare> pq; // makes it a min heap
 
     auto comp2 = [](auto& lhs, auto& rhs) -> bool {
         return lhs > rhs;
     };
-    priority_queue<int, vector<int>, decltype(comp2)> pq2 {comp2};
+    set<int, vector<int>, decltype(comp2)> pq2 {comp2};
 
     pq.push(1);
     pq.push(2);

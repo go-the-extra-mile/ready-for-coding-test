@@ -39,7 +39,7 @@ int main(){
         if (j1.first != j2.first) return j1.first < j2.first;
         return j1.second > j2.second;
     }; // 가격 오름차순, 가격이 같다면 무게 내림차순
-    priority_queue<pii, vector<pii>, decltype(comp)> jewels(comp); 
+    set<pii, vector<pii>, decltype(comp)> jewels(comp); 
     // 각 보석을 {가치, 무게}의 pair로 묶어 우선순위 큐에 저장
 
     int m, v;
